@@ -52,5 +52,9 @@
 @import "utilities/api";
 // scss-docs-end import-stack
 
+// Components
+@import "components/components";
 // Custom scss
 @import "header";
+@import "hero";
+@import "category";

@@ -1,7 +1,16 @@
 .header {
   &__top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    font-size: 0.825rem;
+  }
+  &__menu {
+    & a {
+      margin: 0 1.25rem;
+    }
+  }
+  &__icon {
+    & a {
+      margin: 0 0.625rem;
+      text-decoration: none;
+    }
   }
 }

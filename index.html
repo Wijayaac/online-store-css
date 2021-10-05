@@ -11,37 +11,181 @@
 
 <body>
     <header class="header">
-        <div class="header__top">
-            <p>
-                <span>
-                    +000-0000-0000
-                </span>
-                <span>
-                    testing@gmail.com
-                </span>
-            </p>
-            <p>Summer sale discount <span>50%</span> <b>Shop Now</b> </p>
-            <div class="dropdown">
-                <p>HubSpot Resources</p>
-                <div class="dropdown-content">
-                    <a href="https://blog.hubspot.com/">Blog</a>
-                    <a href="https://academy.hubspot.com/">Academy</a>
-                    <a href="https://www.youtube.com/user/hubspot">YouTube</a>
+        <div class="d-flex flex-row justify-content-around align-items-center bg-light py-0">
+            <div>
+                <p class="d-inline-block text-muted header__top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                        class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                    </svg> +000-0000-0000
+                </p>
+                <p class="d-inline-block text-muted header__top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                        class="bi bi-envelope-open" viewBox="0 0 16 16">
+                        <path
+                            d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.818l5.724 3.465L8 8.917l1.276.766L15 6.218V5.4a1 1 0 0 0-.53-.882l-6-3.2zM15 7.388l-4.754 2.877L15 13.117v-5.73zm-.035 6.874L8 10.083l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738zM1 13.117l4.754-2.852L1 7.387v5.73zM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2z" />
+                    </svg> testing@gmail.com
+                </p>
+            </div>
+            <div>
+                <p class="text-muted  header__top">Summer sale discount <span class="text-danger">50%</span> <b>Shop
+                        Now</b> </p>
+            </div>
+            <div class="d-flex">
+                <div class="dropdown mx-1">
+                    <a class="dropdown-toggle text-decoration-none text-muted d-inline-block  header__top" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Language
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Indonesia</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown mx-1">
+                    <a class="dropdown-toggle text-decoration-none text-muted d-inline-block  header__top" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Currency
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    aria-hidden="true" role="img" width="1.89em" height="1em"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 300 159">
+                                    <rect x="0" y="0" width="300" height="159" fill="none" stroke="none" />
+                                    <g fill="none">
+                                        <path fill="#FFF" d="M0 .552h300v157.895H0z" />
+                                        <path fill="#B22234"
+                                            d="M0 .552h300v12.146H0zm0 24.292h300V36.99H0zm0 24.291h300v12.146H0zm0 24.292h300v12.146H0zm0 24.291h300v12.146H0zm0 24.292h300v12.146H0zm0 24.291h300v12.146H0z" />
+                                        <path fill="#3C3B6E" d="M0 .552h120v85.02H0z" />
+                                        <path fill="#FFF"
+                                            d="M5.638 7.454l2.859 2.077l-1.092 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.895 0l2.858 2.077l-1.092 3.361l2.859-2.077l2.859 2.077l-1.092-3.361l2.858-2.077H31.25l-1.092-3.36l-1.092 3.36zm19.895 0l2.858 2.077l-1.092 3.361l2.859-2.077l2.858 2.077l-1.092-3.361l2.859-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.895 0l2.858 2.077l-1.092 3.361l2.859-2.077l2.858 2.077l-1.092-3.361l2.859-2.077h-3.534l-1.091-3.36l-1.092 3.36zm19.894 0l2.859 2.077l-1.092 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.895 0l2.858 2.077l-1.092 3.361l2.859-2.077l2.858 2.077l-1.092-3.361l2.859-2.077h-3.533l-1.092-3.36l-1.092 3.36zm-89.527 8.527l2.859 2.077l-1.092 3.36l2.859-2.077l2.858 2.077l-1.092-3.36l2.859-2.077h-3.534l-1.091-3.361l-1.092 3.361zm19.895 0l2.859 2.077l-1.092 3.36l2.858-2.077l2.859 2.077l-1.092-3.36l2.858-2.077h-3.533l-1.092-3.361l-1.092 3.361zm19.895 0l2.859 2.077l-1.092 3.36L60 19.341l2.859 2.077l-1.092-3.36l2.858-2.077h-3.533L60 12.62l-1.092 3.361zm19.895 0l2.858 2.077l-1.092 3.36l2.859-2.077l2.858 2.077l-1.092-3.36l2.859-2.077h-3.533l-1.092-3.361l-1.092 3.361zm19.894 0l2.859 2.077l-1.092 3.36l2.858-2.077l2.859 2.077l-1.092-3.36l2.858-2.077h-3.533l-1.092-3.361l-1.091 3.361zM5.638 24.507l2.859 2.077l-1.092 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.895 0l2.858 2.077l-1.092 3.361l2.859-2.077l2.859 2.077l-1.092-3.361l2.858-2.077H31.25l-1.092-3.36l-1.092 3.36zm19.895 0l2.858 2.077l-1.092 3.361l2.859-2.077l2.858 2.077l-1.092-3.361l2.859-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.895 0l2.858 2.077l-1.092 3.361l2.859-2.077l2.858 2.077l-1.092-3.361l2.859-2.077h-3.534l-1.091-3.36l-1.092 3.36zm19.894 0l2.859 2.077l-1.092 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.895 0l2.858 2.077l-1.092 3.361l2.859-2.077l2.858 2.077l-1.092-3.361l2.859-2.077h-3.533l-1.092-3.36l-1.092 3.36zm-89.281 8.555l2.858 2.077l-1.091 3.36l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.076h-3.533l-1.092-3.361l-1.092 3.361zm19.895 0l2.858 2.077l-1.092 3.36l2.859-2.077l2.858 2.077l-1.092-3.361l2.859-2.076h-3.533l-1.092-3.361l-1.092 3.361zm19.895 0l2.858 2.077l-1.092 3.36l2.859-2.077l2.858 2.077l-1.092-3.361l2.859-2.076h-3.534l-1.091-3.361l-1.092 3.361zm19.894 0l2.859 2.077l-1.092 3.36l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.076h-3.533l-1.092-3.361l-1.092 3.361zm19.895 0l2.858 2.077l-1.092 3.36l2.859-2.077l2.858 2.077l-1.092-3.361l2.859-2.076h-3.533l-1.092-3.361l-1.092 3.361zM5.94 41.517l2.859 2.076l-1.092 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.076h-3.533l-1.092-3.361l-1.092 3.361zm19.895 0l2.858 2.076l-1.092 3.361l2.859-2.077l2.858 2.077l-1.091-3.361l2.858-2.076h-3.533l-1.092-3.361l-1.092 3.361zm19.895 0l2.858 2.076l-1.092 3.361l2.859-2.077l2.858 2.077l-1.092-3.361l2.859-2.076h-3.533l-1.092-3.361l-1.092 3.361zm19.894 0l2.859 2.076l-1.092 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.859-2.076h-3.534l-1.092-3.361l-1.091 3.361zm19.895 0l2.858 2.076l-1.091 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.076h-3.533l-1.092-3.361l-1.092 3.361zm19.895 0l2.858 2.076l-1.092 3.361l2.859-2.077l2.858 2.077l-1.092-3.361l2.859-2.076h-3.533l-1.092-3.361l-1.092 3.361zM6.127 58.299l2.858 2.077l-1.092 3.361l2.859-2.077l2.858 2.077l-1.092-3.361l2.859-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.894 0l2.859 2.077l-1.092 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.895 0l2.858 2.077l-1.091 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.895 0l2.858 2.077l-1.092 3.361l2.859-2.077l2.858 2.077l-1.091-3.361l2.858-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.894 0l2.859 2.077l-1.092 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.859-2.077h-3.534l-1.092-3.36l-1.091 3.36zm19.895 0l2.858 2.077l-1.091 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.077h-3.533l-1.092-3.36l-1.092 3.36zM5.884 75.279l2.858 2.077l-1.092 3.361l2.859-2.077l2.858 2.077l-1.092-3.361l2.859-2.077H11.6l-1.091-3.36l-1.092 3.36zm19.894 0l2.859 2.077l-1.092 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.895 0l2.858 2.077l-1.091 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.077H51.39l-1.092-3.36l-1.092 3.36zm19.895 0l2.858 2.077l-1.092 3.361l2.859-2.077l2.858 2.077l-1.091-3.361l2.858-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.894 0l2.859 2.077l-1.092 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.859-2.077h-3.534l-1.092-3.36l-1.091 3.36zm19.895 0l2.858 2.077l-1.091 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.077h-3.533l-1.092-3.36l-1.092 3.36zM15.89 49.824l2.858 2.077l-1.091 3.36l2.858-2.077l2.859 2.077l-1.092-3.36l2.858-2.077h-3.533l-1.092-3.361l-1.092 3.361zm19.895 0l2.858 2.077l-1.092 3.36l2.859-2.077l2.858 2.077l-1.091-3.36l2.858-2.077h-3.533l-1.092-3.361l-1.092 3.361zm19.895 0l2.858 2.077l-1.092 3.36l2.859-2.077l2.858 2.077l-1.092-3.36l2.859-2.077h-3.533l-1.092-3.361l-1.092 3.361zm19.894 0l2.859 2.077l-1.092 3.36l2.858-2.077l2.859 2.077l-1.092-3.36l2.858-2.077h-3.533l-1.092-3.361l-1.092 3.361zm19.895 0l2.858 2.077l-1.092 3.36l2.859-2.077l2.858 2.077l-1.091-3.36l2.858-2.077h-3.533l-1.092-3.361l-1.092 3.361zM15.831 66.777l2.859 2.077l-1.092 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.895 0l2.858 2.077l-1.092 3.361l2.859-2.077l2.859 2.077l-1.092-3.361l2.858-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.895 0l2.858 2.077l-1.092 3.361l2.859-2.077l2.858 2.077l-1.092-3.361l2.859-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.894 0l2.859 2.077l-1.092 3.361l2.858-2.077l2.859 2.077l-1.092-3.361l2.858-2.077h-3.533l-1.092-3.36l-1.092 3.36zm19.895 0l2.858 2.077l-1.092 3.361l2.859-2.077l2.858 2.077l-1.091-3.361l2.858-2.077h-3.533l-1.092-3.36l-1.092 3.36z" />
+                                    </g>
+                                </svg> USD</a></li>
+                        <li><a class="dropdown-item" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    aria-hidden="true" role="img" width="1.89em" height="1em"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 301 201">
+                                    <rect x="0" y="0" width="301" height="201" fill="none" stroke="none" />
+                                    <g fill="none">
+                                        <path fill="#CE1126" d="M.5.5h300v200H.5z" />
+                                        <path fill="#FFF" d="M.5 100.5h300v100H.5z" />
+                                    </g>
+                                </svg> IDR</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="header__dropdown">
-                <ul class="header__lang">
-                    <li>English</li>
-                    <li>Indonesia</li>
-                </ul>
-                <ul class="header__currency">
-                    <li>USD</li>
-                    <li>IDR</li>
-                </ul>
+        </div>
+        <div class="header__navigation d-flex justify-content-around align-items-center py-3">
+            <div class="header__logo">
+                <img src="./images/logo.png" width="100px" alt="">
+            </div>
+            <div class="header__menu">
+                <a class="text-decoration-none fw-bold text-dark" href="/">Home</a>
+                <a class="text-decoration-none fw-bold text-dark" href="/shop.html">Shop</a>
+                <a class="text-decoration-none fw-bold text-dark" href="/product.html">Product</a>
+                <a class="text-decoration-none fw-bold text-danger" href="/sale.html">Sale</a>
+                <a class="text-decoration-none fw-bold text-success" href="/coupon.html">Coupon</a>
+            </div>
+            <div class="header__icon">
+                <a class="text-dark" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </a>
+                <a class="text-dark position-relative" href="/shop.html"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                    </svg>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
+                        1
+                        <span class="visually-hidden">unread messages</span>
+                    </span></a>
+                <a class="text-dark position-relative" href="/product.html"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
+                        1
+                        <span class="visually-hidden">unread messages</span>
+                    </span></a>
+                <a class="text-dark" href="/sale.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                    </svg></a>
             </div>
         </div>
     </header>
-
+    <main>
+        <section class="d-flex justify-content-center align-items-center hero">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <div class="fst-6 fw-bold hero__subtitle text-center mb-2 ">SUMMER COLLECTION</div>
+                    <div class="h1 fw-bold hero__title text-center mb-3 ">HUGE SALE 70% OFF</div>
+                </div>
+                <div class="button__cta text-center">
+                    <a href="" class="btn btn-dark btn-lg border-0 rounded-0">Man</a>
+                    <a href="" class="btn btn-dark btn-lg border-0 rounded-0">Women</a>
+                </div>
+            </div>
+        </section>
+        <section class="container overflow-hidden category">
+            <div class="row gx-5 text-center my-3">
+                <div class="col-md-4">
+                    <div class="p-3 bg-light">FREE SHIPING ALL ORDER OVER 1100</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 bg-light">SUMMER SALE OFF TO 50%</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 bg-light">WE SUPPORT 24 HOURS A DAY</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 border-1 border-dark">
+                    <div class="category__side mb-md-3 mb-2">
+                        <div class="category__image" style="background-image: url('./images/women-category.jpg')"></div>
+                        <div class="button__cta category__cta">
+                            <a class="btn btn-dark border-0 rounded-0 mb-3 " href="#"> Women</a>
+                        </div>
+                    </div>
+                    <div class="category__side mb-md-3 mb-2">
+                        <div class="category__image" style="background-image: url('./images/bag-category.jpg')"></div>
+                        <div class="button__cta category__cta">
+                            <a class="btn btn-dark border-0 rounded-0 mb-3 " href="#"> Bag</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 border-1 border-dark">
+                    <div class="category__center mb-md-3 mb-2">
+                        <div class="category__image" style="background-image: url('./images/watch-category.jpg')"></div>
+                        <div class="button__cta category__cta">
+                            <a class="btn btn-dark border-0 rounded-0 mb-3 " href="#"> Watch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 border-1 border-dark">
+                    <div class="category__side mb-md-3 mb-2">
+                        <div class="category__image" style="background-image: url('./images/men-category.jpg')"></div>
+                        <div class="button__cta category__cta">
+                            <a class="btn btn-dark border-0 rounded-0 mb-3 " href="#"> Men</a>
+                        </div>
+                    </div>
+                    <div class="category__side mb-md-3 mb-2">
+                        <div class="category__image" style="background-image: url('./images/shoes-category.jpg')"></div>
+                        <div class="button__cta category__cta">
+                            <a class="btn btn-dark border-0 rounded-0 mb-3 " href="#"> Shoes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="./dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
