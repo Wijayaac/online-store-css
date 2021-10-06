@@ -1,0 +1,41 @@
+.banner {
+  &__catalog,
+  &__discount {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    &::after {
+      content: "";
+      color: #fff;
+      text-align: center;
+      justify-content: center;
+      align-items: flex-end;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+    }
+  }
+  &__image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 550px;
+  }
+
+  &__catalog:hover &__image,
+  &__discount:hover &__image {
+    transition: all ease 0.4s;
+    transform: scale(1.2);
+  }
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align: center;
+    color: $light;
+  }
+}

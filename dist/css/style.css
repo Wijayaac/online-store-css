@@ -11147,17 +11147,6 @@ textarea.form-control-lg {
   position: relative;
   overflow: hidden;
 }
-.category__side::after {
-  content: "";
-  color: #fff;
-  text-align: center;
-  justify-content: center;
-  align-items: flex-end;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
 .category__center {
   display: flex;
   justify-content: center;
@@ -11168,7 +11157,7 @@ textarea.form-control-lg {
   position: relative;
   overflow: hidden;
 }
-.category__center::after {
+.category__center::after, .category__side::after {
   content: "";
   color: #fff;
   text-align: center;
@@ -11190,7 +11179,6 @@ textarea.form-control-lg {
   display: block;
   height: 100%;
   width: 100%;
-  transition: 0.4s ease all;
 }
 .category__side:hover .category__image, .category__center:hover .category__image {
   transition: 0.4s ease all;
@@ -11198,6 +11186,88 @@ textarea.form-control-lg {
 }
 .category__side:hover .category__side::after, .category__center:hover .category__center::after {
   background-color: #fff !important;
+}
+
+.product__title::after {
+  content: "";
+  position: absolute;
+  background-color: #212529;
+  width: 10%;
+  height: 0.25rem;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.product__menu a {
+  text-decoration: none;
+  color: #212529;
+  display: inline-block;
+  margin: 0 1.25rem;
+}
+.product__menu .active {
+  border-bottom: solid 4px #212529;
+}
+.product__brand, .product__price {
+  color: #6c757d;
+}
+.product__name {
+  font-weight: 800;
+}
+.product__image {
+  position: relative;
+  overflow: hidden;
+  height: 21.875rem;
+}
+.product__image div {
+  background-position: center;
+  background-size: cover;
+  width: 17.5rem;
+  height: 21.875rem;
+}
+.product__image:hover .secondary {
+  display: block;
+  transition: all ease 1s;
+  transform: scale(1.2);
+}
+.product__image:hover .main {
+  display: none;
+}
+
+.banner__catalog, .banner__discount {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.banner__catalog::after, .banner__discount::after {
+  content: "";
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.banner__image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 550px;
+}
+.banner__catalog:hover .banner__image, .banner__discount:hover .banner__image {
+  transition: all ease 0.4s;
+  transform: scale(1.2);
+}
+.banner__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+  color: #f8f9fa;
 }
 
 /*# sourceMappingURL=style.css.map */

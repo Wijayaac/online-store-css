@@ -1,0 +1,51 @@
+.product {
+  &__title::after {
+    content: "";
+    position: absolute;
+    background-color: $dark;
+    width: 10%;
+    height: 0.25rem;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  &__menu {
+    a {
+      text-decoration: none;
+      color: $dark;
+      display: inline-block;
+      margin: 0 1.25rem;
+    }
+    .active {
+      border-bottom: solid 4px $dark;
+    }
+  }
+  &__brand,
+  &__price {
+    color: $gray-600;
+  }
+  &__name {
+    font-weight: 800;
+  }
+  &__image {
+    position: relative;
+    overflow: hidden;
+    height: 21.875rem;
+    div {
+      background-position: center;
+      background-size: cover;
+      width: 17.5rem;
+      height: 21.875rem;
+    }
+    &:hover {
+      .secondary {
+        display: block;
+        transition: all ease 1s;
+        transform: scale(1.2);
+      }
+      .main {
+        display: none;
+      }
+    }
+  }
+}
