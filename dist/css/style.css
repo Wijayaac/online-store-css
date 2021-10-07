@@ -11253,8 +11253,8 @@ textarea.form-control-lg {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 350px;
-  width: 550px;
+  height: 21.875rem;
+  width: 37.5rem;
 }
 .banner__catalog:hover .banner__image, .banner__discount:hover .banner__image {
   transition: all ease 0.4s;
@@ -11268,6 +11268,31 @@ textarea.form-control-lg {
   text-transform: uppercase;
   text-align: center;
   color: #f8f9fa;
+}
+
+.blog__item a {
+  text-decoration: none;
+  color: inherit;
+}
+.blog__title {
+  position: relative;
+}
+.blog__title::after {
+  content: "";
+  position: absolute;
+  background-color: #212529;
+  width: 10%;
+  height: 0.25rem;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.blog__image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 12rem;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

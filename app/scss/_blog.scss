@@ -1,0 +1,28 @@
+.blog {
+  &__item {
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  &__title {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $dark;
+      width: 10%;
+      height: 0.25rem;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  &__image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 12rem;
+    width: 100%;
+  }
+}
