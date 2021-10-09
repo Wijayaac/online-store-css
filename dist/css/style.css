@@ -6185,7 +6185,7 @@ textarea.form-control-lg {
 .offcanvas-start {
   top: 0;
   left: 0;
-  width: 400px;
+  width: 330px;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateX(-100%);
 }
@@ -6193,7 +6193,7 @@ textarea.form-control-lg {
 .offcanvas-end {
   top: 0;
   right: 0;
-  width: 400px;
+  width: 330px;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateX(100%);
 }
@@ -11123,6 +11123,11 @@ textarea.form-control-lg {
 .header__top {
   font-size: 0.825rem;
 }
+@media (max-width: 575.98px) {
+  .header__top {
+    margin: 0;
+  }
+}
 .header__menu a {
   margin: 0 1.25rem;
 }
@@ -11130,30 +11135,74 @@ textarea.form-control-lg {
   margin: 0 0.625rem;
   text-decoration: none;
 }
+.header__navigation {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header__navigation {
+    display: flex;
+  }
+}
+.header__mobile {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .header__mobile {
+    display: none;
+  }
+}
+.header__pills {
+  width: 90%;
+}
+.header__pills button {
+  width: 50%;
+}
+.header__pills .nav-link {
+  border-radius: 0;
+  color: #212529;
+  font-weight: 700;
+}
+.header__pills .nav-link.active {
+  background-color: #d2f4ea;
+  border-top: solid 3px #1aa179;
+}
 
 .hero {
   background-image: url("../../images/main-hero.jpg");
   background-size: cover;
-  height: 78vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 46vh;
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 78vh;
+  }
 }
 
 .category__side {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  cursor: pointer;
-  width: 100%;
-  height: 300px;
-  position: relative;
-  overflow: hidden;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .category__side {
+    height: 300px;
+  }
 }
 .category__center {
+  height: 400px;
+}
+@media (min-width: 768px) {
+  .category__center {
+    height: 615px;
+  }
+}
+.category__side, .category__center {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   cursor: pointer;
   width: 100%;
-  height: 615px;
   position: relative;
   overflow: hidden;
 }
@@ -11184,19 +11233,28 @@ textarea.form-control-lg {
   transition: 0.4s ease all;
   transform: scale(1.1);
 }
-.category__side:hover .category__side::after, .category__center:hover .category__center::after {
-  background-color: #fff !important;
-}
 
 .product__title::after {
   content: "";
   position: absolute;
   background-color: #212529;
-  width: 10%;
+  width: 25%;
   height: 0.25rem;
   bottom: 0;
   left: 50%;
   transform: translate(-50%);
+}
+@media (min-width: 768px) {
+  .product__title::after {
+    width: 10%;
+  }
+}
+@media (max-width: 575.98px) {
+  .product__menu {
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+  }
 }
 .product__menu a {
   text-decoration: none;
@@ -11221,8 +11279,13 @@ textarea.form-control-lg {
 .product__image div {
   background-position: center;
   background-size: cover;
-  width: 17.5rem;
-  height: 21.875rem;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .product__image div {
+    height: 21.875rem;
+  }
 }
 .product__image:hover .secondary {
   display: block;
@@ -11231,6 +11294,9 @@ textarea.form-control-lg {
 }
 .product__image:hover .main {
   display: none;
+}
+.product__btn {
+  width: 200px;
 }
 
 .banner__catalog, .banner__discount {
@@ -11253,8 +11319,13 @@ textarea.form-control-lg {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 21.875rem;
   width: 37.5rem;
+  height: 11.875rem;
+}
+@media (min-width: 768px) {
+  .banner__image {
+    height: 21.875rem;
+  }
 }
 .banner__catalog:hover .banner__image, .banner__discount:hover .banner__image {
   transition: all ease 0.4s;
@@ -11281,11 +11352,16 @@ textarea.form-control-lg {
   content: "";
   position: absolute;
   background-color: #212529;
-  width: 10%;
+  width: 40%;
   height: 0.25rem;
   bottom: 0;
   left: 50%;
   transform: translate(-50%);
+}
+@media (min-width: 768px) {
+  .blog__title::after {
+    width: 10%;
+  }
 }
 .blog__image {
   background-size: cover;
@@ -11293,6 +11369,24 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   height: 12rem;
   width: 100%;
+}
+
+.footer {
+  color: #6c757d;
+}
+.footer h3, .footer .h3 {
+  color: #212529;
+}
+.footer__socials a {
+  color: #6c757d;
+  display: inline-block;
+  margin: 0 10px;
+}
+.footer__copyright a {
+  display: inline-block;
+  margin: 0 0.65rem;
+  text-decoration: none;
+  color: #6c757d;
 }
 
 /*# sourceMappingURL=style.css.map */

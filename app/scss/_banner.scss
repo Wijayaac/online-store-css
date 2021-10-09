@@ -20,8 +20,11 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 21.875rem;
     width: 37.5rem;
+    height: 11.875rem;
+    @include media-breakpoint-up(md) {
+      height: 21.875rem;
+    }
   }
 
   &__catalog:hover &__image,

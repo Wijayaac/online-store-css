@@ -11,11 +11,14 @@
       content: "";
       position: absolute;
       background-color: $dark;
-      width: 10%;
+      width: 40%;
       height: 0.25rem;
       bottom: 0;
       left: 50%;
       transform: translate(-50%);
+      @include media-breakpoint-up(md) {
+        width: 10%;
+      }
     }
   }
   &__image {

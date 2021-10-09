@@ -1,6 +1,9 @@
 .header {
   &__top {
     font-size: 0.825rem;
+    @include media-breakpoint-down(sm) {
+      margin: 0;
+    }
   }
   &__menu {
     & a {
@@ -11,6 +14,34 @@
     & a {
       margin: 0 0.625rem;
       text-decoration: none;
+    }
+  }
+  &__navigation {
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: flex;
+    }
+  }
+  &__mobile {
+    display: flex;
+    justify-content: space-between;
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+  &__pills {
+    width: 90%;
+    button {
+      width: 50%;
+    }
+    .nav-link {
+      border-radius: 0;
+      color: $dark;
+      font-weight: 700;
+      &.active {
+        background-color: $teal-100;
+        border-top: solid 3px $teal-600;
+      }
     }
   }
 }

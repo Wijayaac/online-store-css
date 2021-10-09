@@ -1,0 +1,21 @@
+.footer {
+  color: $gray-600;
+  h3 {
+    color: $dark;
+  }
+  &__socials {
+    a {
+      color: $gray-600;
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
+  &__copyright {
+    a {
+      display: inline-block;
+      margin: 0 0.65rem;
+      text-decoration: none;
+      color: $gray-600;
+    }
+  }
+}
