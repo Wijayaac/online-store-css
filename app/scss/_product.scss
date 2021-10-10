@@ -62,4 +62,35 @@
   &__btn {
     width: 200px;
   }
+
+  &__cart,
+  &__wish {
+    position: absolute;
+    z-index: 1000;
+    &:hover {
+      background-color: $danger;
+      color: $white;
+      border: none;
+    }
+  }
+  &__cart {
+    height: 2.5rem;
+    transform: translate(50%, 50%);
+    bottom: 5%;
+    right: 20%;
+    @include media-breakpoint-up(md) {
+      bottom: 10%;
+      right: 10%;
+    }
+  }
+  &__wish {
+    bottom: 15%;
+    right: 20%;
+    height: 2.5rem;
+    transform: translate(50%, 20%);
+    @include media-breakpoint-up(md) {
+      bottom: 20%;
+      right: 10%;
+    }
+  }
 }

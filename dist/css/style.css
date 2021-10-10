@@ -11298,6 +11298,39 @@ textarea.form-control-lg {
 .product__btn {
   width: 200px;
 }
+.product__cart, .product__wish {
+  position: absolute;
+  z-index: 1000;
+}
+.product__cart:hover, .product__wish:hover {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+}
+.product__cart {
+  height: 2.5rem;
+  transform: translate(50%, 50%);
+  bottom: 5%;
+  right: 20%;
+}
+@media (min-width: 768px) {
+  .product__cart {
+    bottom: 10%;
+    right: 10%;
+  }
+}
+.product__wish {
+  bottom: 15%;
+  right: 20%;
+  height: 2.5rem;
+  transform: translate(50%, 20%);
+}
+@media (min-width: 768px) {
+  .product__wish {
+    bottom: 20%;
+    right: 10%;
+  }
+}
 
 .banner__catalog, .banner__discount {
   position: relative;
